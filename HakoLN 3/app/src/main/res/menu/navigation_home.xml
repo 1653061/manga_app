@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/menuTrangChu"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Trang chủ"/>
+    <item
+        android:id="@+id/menuXemNhieu"
+        android:icon="@drawable/ic_remove_red_eye_black_24dp"
+        android:title="Xem nhiều"/>
+
+
+
+    <item
+        android:id="@+id/menuTimkiem"
+        android:title="Tìm kiếm"
+        android:icon="@drawable/ic_view_comfy_black_24dp"
+        app:showAsAction="ifRoom|withText">
+        <menu>
+            <group>
+                <item android:title="Truyện Tranh"
+                    android:id="@+id/menuSearchTruyenTranh"
+                    android:icon="@drawable/ic_search_black_24dp"/>
+                <item android:title="Truyện Chữ"
+                    android:id="@+id/menuSearchTruyenChu"
+                    android:icon="@drawable/ic_search_black_24dp"/>
+            </group>
+        </menu>
+
+    </item>
+
+    <item
+        android:id="@+id/menuTheloai"
+        android:title="Thể Loại"
+        android:icon="@drawable/ic_view_comfy_black_24dp"
+        app:showAsAction="ifRoom|withText">
+        <menu>
+            <group>
+                <item android:title="Truyện Tranh"
+                    android:id="@+id/menuTruyenTranh"
+                    android:icon="@drawable/ic_image_black_24dp"/>
+                <item android:title="Truyện Chữ"
+                    android:id="@+id/menuTruyenChu"
+                    android:icon="@drawable/ic_font_download_black_24dp"/>
+            </group>
+        </menu>
+
+    </item>
+
+</menu>

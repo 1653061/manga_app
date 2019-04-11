@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutHome"
+        android:weightSum="2">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Truyện Tranh"
+            android:id="@+id/btntruyentranh"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Truyện Chữ"
+            android:id="@+id/btntruyenChu"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Truyện mới cập nhật:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_margin="5dp"
+        android:layout_below="@id/layoutHome"
+        android:id="@+id/txtTitle"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txtTitle"
+        android:id="@+id/listUpdate"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/barInfo"
+        app:layout_scrollFlags="enterAlways|snap|scroll"
+        android:background="@android:color/black">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="Title Chapter"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:id="@+id/titleChapter"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="Page Number"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:id="@+id/pageNumber"/>
+        </LinearLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/barInfo"
+        android:id="@+id/scrollView">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/demo"
+            android:id="@+id/txtContent"/>
+    </ScrollView>
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/barChangePage"
+        android:layout_alignParentBottom="true"
+        app:layout_scrollFlags="enterAlways|snap|scroll"
+        android:background="@android:color/black">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:weightSum="5">
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/previosChapter"
+                android:background="@android:color/transparent"
+                android:layout_weight="1"
+                android:src="@drawable/ic_arrow_back_white_24dp"/>
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/goToNovelView"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_home_white_24dp"/>
+
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/formatText"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_format_size_white_24dp"/>
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/formatTheme"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_collections_white_24dp"/>
+
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/nextChapter"
+                android:background="@android:color/transparent"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_arrow_forward_white_24dp"/>
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+
+</RelativeLayout>
